@@ -1,6 +1,6 @@
 import java.util.*;
 public class MakeStars{
-  public static void main( String[]args ){
+  public static void main(String[] args){
     Scanner read = new Scanner(System.in);
     while(read.hasNextLine()){
       String line = read.nextLine();
@@ -10,9 +10,9 @@ public class MakeStars{
         for (int i = 0; i < stars.length(); i++){
           System.out.print("*");
         }
-        System.out.println(" ");
+        if (scanLine.hasNext()) System.out.println(" ");
       }
-      System.out.println();
+      if (read.hasNextLine()) System.out.println();
     }
   }
 }
